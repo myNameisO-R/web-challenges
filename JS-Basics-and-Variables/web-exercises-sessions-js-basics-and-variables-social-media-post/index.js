@@ -10,13 +10,25 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
-// --^-- write your code here --^--
+const title = "my social media post";
+const text = "Welcome to my WW";
+let numberOfLikes = 100;
+const Users = "Orna";
+const isReported = "true";
 
 /*
 2. Log all variables to the console. Increase the likes by one and log the amount of likes again. Adapt your code from 1.1 if necessary.
 */
-
 // --v-- write your code here --v--
 
-// --^-- write your code here --^--
+console.log(title);
+
+console.log(text);
+
+console.log(numberOfLikes);
+
+console.log(numberOfLikes);
+
+numberOfLikes++;
+
+console.log(numberOfLikes);
