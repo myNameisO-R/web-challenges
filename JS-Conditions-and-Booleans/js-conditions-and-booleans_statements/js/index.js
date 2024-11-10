@@ -12,6 +12,12 @@ console.log(
 // Part 2: Even / Odd
 const number = 6;
 
+if (number % 2 == 0) {
+  console.log("The number is even!");
+} else {
+  console.log("The number is odd!");
+}
+
 // Part 3: Hotdogs
 const numberOfHotdogs = 42;
 
