@@ -11,10 +11,11 @@ Create a program that calculates the total cost of a meal, including tip, based 
 4. Log out a message using the console.log() method.
 */
 
-/*1/ a*/ const mealCost = 100;
+/*1/ a*/ const mealCost = 150;
 /*b*/ const tipPercentage = 20;
 
 /*2*/ const tipAmount = (mealCost * tipPercentage) / 100;
 
-/*3*/ let mealCostWithTip = 120;
-const totalMealCost = Console.log("Meal cost with tip: ", totalCost);
+/*3*/ const totalCost = mealCost + tipAmount;
+
+console.log("Total cost of the meal including the tip amount:", totalCost);
