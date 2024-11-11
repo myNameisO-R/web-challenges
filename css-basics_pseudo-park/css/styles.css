@@ -9,11 +9,11 @@
 *,
 *::before,
 *::after {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-div.park {
-  margin: 16px;
+.park {
+  margin: 32px;
   border: 2px dashed silver;
   overflow: hidden;
   border-radius: 8px;
@@ -21,7 +21,7 @@ div.park {
 }
 
 .animal {
-  padding: 16px;
+  padding: 32px;
 
   /*
     The animals are very small.
@@ -38,10 +38,10 @@ div.park {
 
   💡 Select the animals by their class names and use the text-align property.
 */
-}
-.giraffe {text-align: center;}
-}
 
+.giraffe {
+  text-align: center;
+}
 
 .dino {
   text-align: right;
@@ -57,20 +57,14 @@ div.park {
   💡 You'll need to use a pseudo-class selector for each animal.
 */
 
-}
 .crocodile:hover {
-  background-color: lightblue;
+  background-color: lightblue; /* Crocodile color on hover */
 }
 
+.giraffe:hover {
+  background-color: lightgreen; /* Giraffe color on hover */
 }
-  .giraffe:hover {
-    background-color: lightgreen; 
-  }
 
-
-  }
-    .dino:hover {
-      background-color: lightsalmon; /* Dino color on hover */
-    }
-
-
+.dino:hover {
+  background-color: lightsalmon; /* Dino color on hover */
+}
