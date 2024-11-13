@@ -9,5 +9,5 @@ form.addEventListener("submit", (Event) => {
   const data = Object.fromEntries(formData);
   console.log("data", data);
   form.requestFullscreen();
-  document.getElementById("firstName").focus();
+  form.getElementById("firstName").focus();
 });
