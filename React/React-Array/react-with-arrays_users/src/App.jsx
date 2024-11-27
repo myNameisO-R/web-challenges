@@ -5,11 +5,17 @@ import Title from "./components/Title";
 import { USERS } from "./db";
 
 export default function App() {
+  console.log(USERS);
+
   return (
     <main className="app">
       <Title text="ClientBoard" />
       <div className="app__card-grid">
         <Card user={USERS[0]} />
+
+        {USERS.map((user) => (
+          <card key={user.roles} user={user} />
+        ))}
       </div>
     </main>
   );
