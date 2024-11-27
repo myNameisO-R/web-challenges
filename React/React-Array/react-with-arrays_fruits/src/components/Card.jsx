@@ -1,5 +1,12 @@
+import React from "react";
 import "./Card.css";
 
-export default function Card({ name }) {
-  return <p className="card">{name}</p>;
+function Card({ name, color }) {
+  return (
+    <div className="card" style={{ backgroundColor: color }}>
+      {name}
+    </div>
+  );
 }
+
+export default Card;
