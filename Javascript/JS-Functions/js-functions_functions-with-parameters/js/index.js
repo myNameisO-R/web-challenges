@@ -7,11 +7,13 @@ console.log("Exercise 1:");
 */
 
 // Uncomment the next line of code and figure out why it does not work:
-// logText;
+// logText;npm
 
 function logText() {
   console.log("This text does not appear. Why?");
 }
+logText();
+console.log("");
 
 console.log("-------------");
 console.log("Exercise 2:");
@@ -36,8 +38,9 @@ greetBob();
 greetMary();
 
 // --v-- write your code here --v--
-
-function greet() {}
+function greet(name) {
+  console.log("Welcome", name, "good to see you again!");
+}
 
 // --^-- write your code here --^--
 
@@ -50,5 +53,10 @@ Note: Separation text means the text that is logged into the console before each
 */
 
 // --v-- write your code here --v--
+
+function logSeparator(number) {
+  console.log("-------------");
+  console.log("Exercise" + Number + ":");
+}
 
 // --^-- write your code here --^--
