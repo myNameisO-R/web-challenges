@@ -4,6 +4,11 @@ const main = document.querySelector('[data-js="main"]');
 
 // Part 1: Creating a Select Input
 
+const select = document.createElement("select");
+select.name = "languages";
+main.append(select);
+
+// --v-- write or modify code below this line --v--
 const languages = {
   DE: "German",
   EN: "English",
@@ -15,12 +20,12 @@ const languages = {
   RU: "Russian",
   ZH: "Chinese",
 };
-
-const select = document.createElement("select");
-select.name = "languages";
-main.append(select);
-
-// --v-- write or modify code below this line --v--
+for (const key in languages) {
+  const option = document.createElement("option");
+  option.value = key;
+  option.textContent = languages[key];
+  select.appendChild(option);
+}
 
 // --^-- write or modify code above this line --^--
 
@@ -38,5 +43,14 @@ main.append(navElement);
 navElement.append(ul);
 
 // --v-- write or modify code below this line --v--
+
+for (const key in nav) {
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.href = nav[key].href;
+  a.textContent = nav[key].text;
+  ul.appendChild(li);
+  li.appendChild(a);
+}
 
 // --^-- write or modify code above this line --^--
