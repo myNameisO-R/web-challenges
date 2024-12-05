@@ -6,20 +6,25 @@ import { employees } from "../utils/db.js";
 // Check the browser preview and conduct some tests to ensure it works correctly.
 
 function findByLastName(employees, lastName) {
-  return null;
+  const employeeByLastName = employees.find((employee) => employee.lastName);
+  return employeeByLastName;
 
   // Exercise 2:
   // The same as above, but now you are searching by the 'id'.
 }
 function findById(employees, id) {
-  return null;
+  const employeeWithId = employees.find((employee) => employee.id === id);
+  return employeeWithId;
 }
 
 // Exercise 3:
 // This time you want to find an employee who lives in a city that includes a specific substring.
 
 function findByCitySubString(employees, string) {
-  return null;
+  const employeeWithCity = employees.find((employee) =>
+    employee.city.includes(string)
+  );
+  return employeeWithCity;
 }
 
 // Bonus:
