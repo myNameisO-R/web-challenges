@@ -70,6 +70,7 @@ const sumOfAllAnimalCharacters = animalStrings
   .map((animal) => animal.length)
   .reduce((sum, item) => sum + item, 0);
 console.log(sumOfAllAnimalCharacters);
+
 export {
   hippoExists,
   catStartingFromIndexFiveExists,
