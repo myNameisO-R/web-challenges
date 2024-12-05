@@ -4,8 +4,8 @@ import { zooAnimals } from "../utils/db.js";
 // Please implement the function 'hasAnimal' that gets an array of animals and an animal name
 // The function should return 'true' if the animal name is included in the array or 'false' if not.
 
-function hasAnimal(animals, animalName) {
-  return null;
+function hasAnimal(animalName) {
+  return animals.includes(animalName);
 }
 
 // Bonus:
