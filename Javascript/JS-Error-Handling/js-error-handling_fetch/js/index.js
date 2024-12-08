@@ -40,7 +40,7 @@ endpoints.forEach((endpoint) => {
       <img alt="${user.first_name} ${user.last_name}" src="${user.avatar}" class="user__image"/>
       <h2>${user.first_name} ${user.last_name}</h2>
       `;
-      errorElement.textContent = "Error 404 user not found";
+      errorElement.textContent = "";
     }
   });
 });
