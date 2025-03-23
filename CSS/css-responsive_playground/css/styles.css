@@ -47,7 +47,7 @@ h1 {
 }
 
 .section {
-  width: 100%;
+  width: 80%;
   background-color: var(--color-water-10);
   padding: 20px;
 }
@@ -93,4 +93,30 @@ h1 {
 
 .box--five img {
   width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .section {
+    width: 400px;
+  }
+}
+
+@media (min-width: 600px) {
+  .section {
+    width: 200px;
+  }
+}
+
+@media (orientation: landscape) {
+  .section {
+    padding: 0;
+    height: 100px;
+    box-shadow: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  box--four {
+    background-color: darkblue;
+  }
 }
