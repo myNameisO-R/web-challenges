@@ -6,7 +6,9 @@ import { employees } from "../utils/db.js";
 // Check the browser preview and conduct some tests to ensure it works correctly.
 
 function findByLastName(employees, lastName) {
-  const employeeByLastName = employees.find((employee) => employee.lastName);
+  const employeeByLastName = employees.find(
+    (employee) => employee.lastName === lastName
+  );
   return employeeByLastName;
 
   // Exercise 2:
@@ -32,7 +34,10 @@ function findByCitySubString(employees, string) {
 // AND who is older than a specific age
 
 function findByProfessionSubStringAndAge(employees, string, age) {
-  return null;
+  const employeeWithProfessionSubstringAndAge = employees.find(
+    (employee) => employee.profession.includes(string) && employee.age > age
+  );
+  return employeeWithProfessionSubstringAndAge;
 }
 
 // ------------------------------------------------------------------------------
